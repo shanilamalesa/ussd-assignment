@@ -6,7 +6,7 @@
 the user picks an option, AT sends another POST to keep the session alive. 
 END means the session is closing, like when the user clicks exit.
 
-2. Sessions expire after ~180 seconds. When the user delays filling the 
+2. Sessions expire after 180 seconds. When the user delays filling the 
 input, after 90-180 seconds the session expires and the user has to start 
 over again. That is why Redis TTL is set to EX 180.
 
@@ -21,3 +21,17 @@ sliced to 182. That is what the clamp function does.
 5. Invalid menu options should re-render with CON, never END. If the user 
 enters an invalid option the session should stay open with CON so they can 
 try again without having to dial from scratch.
+
+
+### What I used AI for:
+- Help setting up Upstash Redis when local install wasn't possible
+- Understanding what the event loop is and why appendFileSync blocks it
+- Debugging code structure when handleUssd was in the wrong place
+- Understanding what TTL means in Redis
+
+### What I wrote myself:
+- The state machine logic
+- The clamp function
+- The back option for each state
+- The session timer check
+- The automated tests
