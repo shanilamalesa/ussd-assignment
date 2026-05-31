@@ -110,7 +110,7 @@ router.post("/", express.urlencoded({ extended: false }), async (req, res) => {
     res.send(clamp(response));
 });
 
-module.exports = router;
+module.exports = { router, handleUssd };
 
 
 
