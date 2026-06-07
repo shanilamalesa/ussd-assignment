@@ -3,6 +3,7 @@ const fs = require("fs");
 const router = express.Router();
 const clamp = require("../utils/clamp");
 const redis = require("../db/redis");
+const leadsRepo = require("../repository/leadsRepo");
 
 
 const KEY = (sessionId) =>`ussd:session:${sessionId}`;
@@ -39,6 +40,8 @@ async function handleUssd({ sessionId, text }) {
             await setState(sessionId, session);
             return "CON Enter lead name:\n0. Back";
         }
+
+
         if (input === "2") return "END Goodbye";
             return "CON Invalid. 1. Add lead 2. Exit";
     }
@@ -58,6 +61,7 @@ async function handleUssd({ sessionId, text }) {
 
     if (session.state === "AWAITING_PHONE") {
 
+           console.log("session data so far:", session.data);
         if (input === "0") {
             session.state = "AWAITING_NAME";
             await setState(sessionId, session);
@@ -82,9 +86,25 @@ async function handleUssd({ sessionId, text }) {
         }
 
         if (input === "1") {
-            await redis.del(KEY(sessionId));
-            return "END lead saved. Asante."
+            console.log("Saving lead:", session.data);
+            try {
+                await leadsRepo.upsertByPhone({
+                    wa_phone: session.data.phone,
+                    name: session.data.name,
+                    source: "ussd",
+                });
+                await redis.del(KEY(sessionId));
+                return "END Lead saved. Asante.";
+            } catch (err) {
+                console.log("USSD save failed:", err);
+                return "END Error saving. Please try again later."
+            }
         }
+
+        // if (input === "1") {
+        //     await redis.del(KEY(sessionId));
+        //     return "END lead saved. Asante."
+        // }
         if (input === "2")
         {
             await redis.del(KEY(sessionId));
