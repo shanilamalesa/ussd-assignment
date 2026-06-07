@@ -50,3 +50,26 @@ Africa's Talking to provide a menu-driven CRM interface.
 - **text.split("*").pop()** — when the user fills in options in the menu, 
   they are concatenated with * like 1*Shaa*0767290335. We split and take 
   the last segment to get only the latest input.
+
+
+  ## Day 3 - Connecting USSD to the CRM
+
+### What was built
+- Connected the USSD app to the PostgreSQL CRM database
+- Added a `source` column to the leads table so every lead knows 
+  where it came from (ussd, whatsapp, or manual)
+- When a user completes the USSD flow, their lead is saved directly 
+  to PostgreSQL using upsert — so no duplicates are created
+- Added a `ussd_transcripts` table that records every step of every 
+  USSD session for auditing purposes
+- Added `created_via_session_id` to the leads table so you can trace 
+  a lead back to the exact USSD session that created it
+- Added source badges to the React dashboard (blue=ussd, grey=manual, 
+  green=whatsapp)
+- Added a GET /api/stats/sources endpoint returning lead counts per source
+
+### What I learned
+- How to reuse a service layer from one channel (WhatsApp) in another (USSD)
+- How ON CONFLICT works in PostgreSQL for upsert operations
+- How to trace data across tables using session IDs
+- How to add new columns to existing tables using ALTER TABLE
