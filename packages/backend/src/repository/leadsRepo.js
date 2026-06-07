@@ -1,14 +1,14 @@
 // require("dotenv").config();
 const pool = require("../db/pool");
 
-async function upsertByPhone({ wa_phone, name, source }){
+async function upsertByPhone({ wa_phone, name, source, created_via_session_id }){
   const { rows } = await pool.query(
-    `INSERT INTO leads (wa_phone, name, source)
-    VALUES ($1, $2, $3)
+    `INSERT INTO leads (wa_phone, name, source, created_via_session_id)
+    VALUES ($1, $2, $3, $4)
     ON CONFLICT (wa_phone)
     DO UPDATE SET name = EXCLUDED.name, source = EXCLUDED.source, updated_at = NOW()
     RETURNING *`,
-    [wa_phone, name, source]
+    [wa_phone, name, source, created_via_session_id]
   );
   return rows[0];
 }

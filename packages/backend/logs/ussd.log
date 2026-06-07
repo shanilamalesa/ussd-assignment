@@ -100,3 +100,27 @@
 [2026-06-07T00:54:20.677Z] sessionId: ATUid_4a62837fb338f5c575e4ed852baebdb4 | serviceCode: *384*46665# | phone: +255767290335 | text: 1*Buses Delivery
 [2026-06-07T00:54:27.870Z] sessionId: ATUid_4a62837fb338f5c575e4ed852baebdb4 | serviceCode: *384*46665# | phone: +255767290335 | text: 1*Buses Delivery*0767290335
 [2026-06-07T00:54:31.880Z] sessionId: ATUid_4a62837fb338f5c575e4ed852baebdb4 | serviceCode: *384*46665# | phone: +255767290335 | text: 1*Buses Delivery*0767290335*1
+[2026-06-07T22:29:16.381Z] sessionId: ATUid_4620294e97fc66c0ea5a2a38e782ebaf | serviceCode: *384*46665# | phone: +447417449196 | text: 
+[2026-06-07T22:29:19.757Z] sessionId: ATUid_4620294e97fc66c0ea5a2a38e782ebaf | serviceCode: *384*46665# | phone: +447417449196 | text: 1
+[2026-06-07T22:29:22.459Z] sessionId: ATUid_4620294e97fc66c0ea5a2a38e782ebaf | serviceCode: *384*46665# | phone: +447417449196 | text: 1*1
+[2026-06-07T22:29:29.941Z] sessionId: ATUid_551507c8fdf33176e0c190c9e4981b4d | serviceCode: *384*46665# | phone: +447417449196 | text: 
+[2026-06-07T22:29:34.170Z] sessionId: ATUid_551507c8fdf33176e0c190c9e4981b4d | serviceCode: *384*46665# | phone: +447417449196 | text: 1
+[2026-06-07T22:29:47.405Z] sessionId: ATUid_551507c8fdf33176e0c190c9e4981b4d | serviceCode: *384*46665# | phone: +447417449196 | text: 1*Education services
+[2026-06-07T22:29:55.225Z] sessionId: ATUid_551507c8fdf33176e0c190c9e4981b4d | serviceCode: *384*46665# | phone: +447417449196 | text: 1*Education services*0767290335
+[2026-06-07T22:29:58.803Z] sessionId: ATUid_551507c8fdf33176e0c190c9e4981b4d | serviceCode: *384*46665# | phone: +447417449196 | text: 1*Education services*0767290335*1
+[2026-06-07T22:31:28.510Z] sessionId: ATUid_eac10d1e12f87c3140d9e933e3260a26 | serviceCode: *384*46665# | phone: +447417449196 | text: 
+[2026-06-07T22:32:03.107Z] sessionId: ATUid_4bca0fa8119c5b984d79ad28b8327331 | serviceCode: *384*46665# | phone: +447417449196 | text: 
+[2026-06-07T22:32:07.881Z] sessionId: ATUid_4bca0fa8119c5b984d79ad28b8327331 | serviceCode: *384*46665# | phone: +447417449196 | text: 1
+[2026-06-07T22:32:25.350Z] sessionId: ATUid_4bca0fa8119c5b984d79ad28b8327331 | serviceCode: *384*46665# | phone: +447417449196 | text: 1*Car Management
+[2026-06-07T22:32:35.979Z] sessionId: ATUid_4bca0fa8119c5b984d79ad28b8327331 | serviceCode: *384*46665# | phone: +447417449196 | text: 1*Car Management*0768390235
+[2026-06-07T22:32:38.878Z] sessionId: ATUid_4bca0fa8119c5b984d79ad28b8327331 | serviceCode: *384*46665# | phone: +447417449196 | text: 1*Car Management*0768390235*1
+[2026-06-07T22:38:42.086Z] sessionId: ATUid_0fc52196d0852cff14c86b2651a1f20e | serviceCode: *384*46665# | phone: +447417449196 | text: 
+[2026-06-07T22:38:45.083Z] sessionId: ATUid_0fc52196d0852cff14c86b2651a1f20e | serviceCode: *384*46665# | phone: +447417449196 | text: 1
+[2026-06-07T22:38:50.836Z] sessionId: ATUid_0fc52196d0852cff14c86b2651a1f20e | serviceCode: *384*46665# | phone: +447417449196 | text: 1*Buses Delivery
+[2026-06-07T22:38:58.135Z] sessionId: ATUid_0fc52196d0852cff14c86b2651a1f20e | serviceCode: *384*46665# | phone: +447417449196 | text: 1*Buses Delivery*0735623892
+[2026-06-07T22:39:00.399Z] sessionId: ATUid_0fc52196d0852cff14c86b2651a1f20e | serviceCode: *384*46665# | phone: +447417449196 | text: 1*Buses Delivery*0735623892*1
+[2026-06-07T22:58:37.307Z] sessionId: ATUid_a837048b3c4252ef38f56c85f8190bad | serviceCode: *384*46665# | phone: +447417449196 | text: 
+[2026-06-07T22:58:43.895Z] sessionId: ATUid_a837048b3c4252ef38f56c85f8190bad | serviceCode: *384*46665# | phone: +447417449196 | text: 1
+[2026-06-07T22:58:57.646Z] sessionId: ATUid_a837048b3c4252ef38f56c85f8190bad | serviceCode: *384*46665# | phone: +447417449196 | text: 1*chemicals
+[2026-06-07T22:59:04.400Z] sessionId: ATUid_a837048b3c4252ef38f56c85f8190bad | serviceCode: *384*46665# | phone: +447417449196 | text: 1*chemicals*0767290445
+[2026-06-07T22:59:06.434Z] sessionId: ATUid_a837048b3c4252ef38f56c85f8190bad | serviceCode: *384*46665# | phone: +447417449196 | text: 1*chemicals*0767290445*1

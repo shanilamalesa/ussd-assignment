@@ -20,6 +20,16 @@ async function getState(sessionId) {
 async function setState(sessionId, session) {
     //EX--> expires this key after 180 seconds
     await redis.set(KEY(sessionId), JSON.stringify(session), "EX", 180);
+    
+}
+
+async function saveTranscript({ sessionId, phone, state, input, response}){
+    const pool = require("../db/pool");
+    await pool.query(
+        `INSERT INTO ussd_transcripts (session_id, phone, state, input, response)
+        VALUES ($1, $2, $3, $4, $5)`,
+        [sessionId, phone, state, input, response]
+    );
 }
 
 async function handleUssd({ sessionId, text }) {
@@ -92,6 +102,7 @@ async function handleUssd({ sessionId, text }) {
                     wa_phone: session.data.phone,
                     name: session.data.name,
                     source: "ussd",
+                    created_via_session_id: sessionId,
                 });
                 await redis.del(KEY(sessionId));
                 return "END Lead saved. Asante.";
@@ -126,6 +137,16 @@ router.post("/", express.urlencoded({ extended: false }), async (req, res) => {
     await fs.promises.appendFile("logs/ussd.log", log);
 
     const response = await handleUssd({ sessionId, text });
+   
+
+    await saveTranscript({
+        sessionId,
+        phone: phoneNumber,
+        state: text,
+        input: text.split("*").pop() || "",
+        response
+    });
+
     res.set("Content-Type", "text/plain");
     res.send(clamp(response));
 });
