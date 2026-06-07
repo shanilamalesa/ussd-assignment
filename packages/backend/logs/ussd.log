@@ -92,3 +92,11 @@
 [2026-06-07T00:05:46.355Z] sessionId: ATUid_a33b390ddc46e9dd29af6b6912810081 | serviceCode: *384*46665# | phone: +255767290335 | text: 1*Oder delivery
 [2026-06-07T00:06:02.212Z] sessionId: ATUid_a33b390ddc46e9dd29af6b6912810081 | serviceCode: *384*46665# | phone: +255767290335 | text: 1*Oder delivery*0767290335
 [2026-06-07T00:06:05.580Z] sessionId: ATUid_a33b390ddc46e9dd29af6b6912810081 | serviceCode: *384*46665# | phone: +255767290335 | text: 1*Oder delivery*0767290335*1
+[2026-06-07T00:51:35.623Z] sessionId: ATUid_b444cbc732db4f0593f1e5a2facee996 | serviceCode: *384*46665# | phone: +255767290335 | text: 
+[2026-06-07T00:51:38.310Z] sessionId: ATUid_b444cbc732db4f0593f1e5a2facee996 | serviceCode: *384*46665# | phone: +255767290335 | text: 1
+[2026-06-07T00:52:23.506Z] sessionId: ATUid_b444cbc732db4f0593f1e5a2facee996 | serviceCode: *384*46665# | phone: +255767290335 | text: 1*Buses Investigation
+[2026-06-07T00:54:10.183Z] sessionId: ATUid_4a62837fb338f5c575e4ed852baebdb4 | serviceCode: *384*46665# | phone: +255767290335 | text: 
+[2026-06-07T00:54:13.005Z] sessionId: ATUid_4a62837fb338f5c575e4ed852baebdb4 | serviceCode: *384*46665# | phone: +255767290335 | text: 1
+[2026-06-07T00:54:20.677Z] sessionId: ATUid_4a62837fb338f5c575e4ed852baebdb4 | serviceCode: *384*46665# | phone: +255767290335 | text: 1*Buses Delivery
+[2026-06-07T00:54:27.870Z] sessionId: ATUid_4a62837fb338f5c575e4ed852baebdb4 | serviceCode: *384*46665# | phone: +255767290335 | text: 1*Buses Delivery*0767290335
+[2026-06-07T00:54:31.880Z] sessionId: ATUid_4a62837fb338f5c575e4ed852baebdb4 | serviceCode: *384*46665# | phone: +255767290335 | text: 1*Buses Delivery*0767290335*1
