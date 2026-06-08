@@ -1,0 +1,3 @@
+node -e "require('dotenv').config(); const r = require('./src/db/redis'); r.flushall().then(console.log)"
+
+-->It clears all the sessions that are still alive in Redis , whether they're stuck halfway through a flow or just haven't expired yet.
