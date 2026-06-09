@@ -54,3 +54,19 @@ try again without having to dial from scratch.
 - The source badge logic in the React dashboard
 - The /api/stats/sources endpoint
 - The ussd_transcripts table schema
+
+## Day 4 AI Usage
+
+### What I used AI for:
+- Adding Spanish as a third language option
+- Understanding what session abandon rate means when a user dials, 
+  sees the menu, and hangs up without completing the flow
+- Understanding how to track drops using the ussd_drops table
+- Debugging code structure issues in the router.post block
+
+### What I wrote myself:
+- The LANG_SELECT state machine logic
+- The i18n helper integration using t(lang, key) across all states
+- The saveDrop function
+- The help command accessible from every screen
+- The ux-audit.md observations from a farmer's perspective
