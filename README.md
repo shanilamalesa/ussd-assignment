@@ -73,3 +73,28 @@ Africa's Talking to provide a menu-driven CRM interface.
 - How ON CONFLICT works in PostgreSQL for upsert operations
 - How to trace data across tables using session IDs
 - How to add new columns to existing tables using ALTER TABLE
+
+
+## Day 4 - Internationalisation and UX Improvements
+
+### What was built
+- Added a language selection screen at the start of every session
+  so users can choose English, Kiswahili, or Español
+- Built an i18n helper (messages.js) that returns the correct 
+  translation for each language using t(lang, key)
+- Added a help command (press 4) accessible from every screen 
+  that shows a support contact number
+- Added error handling so any server crash returns a friendly 
+  END message instead of a network error
+- Tracked session abandon rate using a ussd_drops table — logs 
+  which state a user was in when their session timed out
+- Wrote a ux-audit.md from a farmer's perspective on a Nokia 105
+
+### What I learned
+- How to build a multilingual USSD app using an i18n helper
+- How to make a command (help) work from every screen by checking 
+  it before any state logic
+- How to track when users abandon sessions and which step they 
+  dropped at
+- Why error handling must return END in uppercase for AT to 
+  display the message correctly
