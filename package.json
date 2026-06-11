@@ -1,5 +1,12 @@
 {
+  "version": "0.3.1",
+  "scripts": {
+    "release": "standard-version"
+  },
   "dependencies": {
     "ioredis": "^5.11.0"
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0"
   }
 }

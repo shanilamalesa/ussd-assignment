@@ -1,11 +1,8 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com),
-and this project adheres to Semantic Versioning.
-
-## [Unreleased]
+### [0.3.1](https://github.com/shanilamalesa/ussd-assignment/compare/v0.3.0...v0.3.1) (2026-06-11)
 
 ## [0.4.0] - 2026-06-09
 ### Added
