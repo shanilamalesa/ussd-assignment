@@ -98,3 +98,21 @@ Africa's Talking to provide a menu-driven CRM interface.
   dropped at
 - Why error handling must return END in uppercase for AT to 
   display the message correctly
+
+
+  ## Day 5 - Release Management
+
+### What was done
+- Created CHANGELOG.md following Keep a Changelog format
+- Wrote release-notes.md explaining SemVer versioning decisions
+- Tagged releases using git tags (v0.3.0, v0.3.1, v0.4.0)
+- Published a GitHub release from the tag
+- Set up standard-version to auto-generate changelogs from 
+  conventional commits
+- Created separate CHANGELOG.md for packages/backend service
+- Generated a GPG key and signed git tags for security
+
+### Stretch Goals Completed
+- standard-version automates changelog generation
+- Separate changelogs per service in the monorepo
+- GPG signed tags verified with "Good signature"
